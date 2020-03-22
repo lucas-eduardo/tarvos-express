@@ -72,7 +72,7 @@ async function copyTemplte(status, nameProject, src, destination) {
 
     log(
       chalk.hex('#7159C1').bold(
-        figlet.textSync('Lucas Eduardo', {
+        figlet.textSync('Tarvos Express', {
           font: 'Standard',
         })
       )
@@ -84,11 +84,12 @@ async function copyTemplte(status, nameProject, src, destination) {
       log(chalk(` ${chalk.hex('#7159C1').bold(key)}: ${parametersList[key]}`));
     });
 
-    log(chalk('\n Example: apiexpress -p apitest \n'));
+    log(chalk('\n Example: tarvos-express -p apitest \n'));
 
     process.exit();
   } else if (params.version || params.v) {
-    log(chalk.hex('#7159c1').bold(`Version ${pjson.version}`));
+    log(chalk.hex('#7159c1').bold(`Version ${pjson.version} \n`));
+    log(chalk.hex('#7159c1').bold(`Created by Lucas Eduardo`));
   } else {
     log(chalk.hex('#7159c1').bold('Enter a valid command'));
   }
