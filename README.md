@@ -16,5 +16,4 @@ The more we get better at this project, the better for the entire developer comm
 
 ## Author
 
-| [<img src="https://avatars3.githubusercontent.com/u/22918282?s=460&v=4" width=115><br><sub>@lucas-eduardo</sub>](https://github.com/lucas-eduardo)
-| :---: | :---: |
+[<img src="https://avatars3.githubusercontent.com/u/22918282?s=460&v=4" width=115><br><sub>@lucas-eduardo</sub>](https://github.com/lucas-eduardo)
