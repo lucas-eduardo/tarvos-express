@@ -1,6 +1,6 @@
 {
   "name": "tarvos-express",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creating structure for api express",
   "main": "index.js",
   "keywords": [
