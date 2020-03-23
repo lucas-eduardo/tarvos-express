@@ -16,27 +16,17 @@ const pjson = require('./package.json');
 async function copyTemplte(status, nameProject, src, destination) {
   try {
     await copy(src, destination);
-    npm.load({ prefix: destination }, () => {
-      npm.commands.install([], (err) => {
-        if (err) {
-          status.stop();
+    setTimeout(() => {
+      status.stop();
 
-          log(chalk.red(`There was an error creating your project`));
-          process.exit();
-        }
-        setTimeout(() => {
-          status.stop();
-
-          log(
-            chalk.green(
-              figures(
-                `✔︎ The project ${nameProject} structure was successfully created`
-              )
-            )
-          );
-        }, 1000);
-      });
-    });
+      log(
+        chalk.green(
+          figures(
+            `✔︎ The project ${nameProject} structure was successfully created`
+          )
+        )
+      );
+    }, 1000);
   } catch (error) {
     status.stop();
 
