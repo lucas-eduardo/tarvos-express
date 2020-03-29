@@ -1,7 +1,7 @@
 {
   "name": "tarvos-express",
-  "version": "1.0.3",
-  "main": "./bin/index.js",
+  "version": "1.0.4",
+  "main": "./src/index.js",
   "repository": "git@github.com:lucas-eduardo/tarvos-express.git",
   "author": "Lucas Eduardo <lucas.eduardo.developer@gmail.com>",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "build": "tsc -p ."
   },
   "bin": {
-    "tarvos-express": "./bin/index.js"
+    "tarvos-express": "./src/index.js"
   },
   "prettier": {
     "singleQuote": true,

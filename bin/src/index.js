@@ -57,7 +57,6 @@ var package_json_1 = require("../package.json");
         switch (_a.label) {
             case 0:
                 args = minimist_1.default(process.argv.slice(2));
-                console.log(package_json_1.version);
                 isCommandValid = verifyArgs_controller_1.default.initialize(args);
                 if (!isCommandValid) return [3, 7];
                 if (!(args.projet || args.p)) return [3, 5];
@@ -100,7 +99,7 @@ var package_json_1 = require("../package.json");
                 _a.label = 6;
             case 6:
                 if (args.version || args.v) {
-                    console_1.log(chalk_1.default.hex('#F38E36').bold("Version 1.0.2 \n"));
+                    console_1.log(chalk_1.default.hex('#F38E36').bold("Version " + package_json_1.version + " \n"));
                     console_1.log(chalk_1.default.hex('#F38E36').bold("Created by Lucas Eduardo"));
                 }
                 return [3, 8];
