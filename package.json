@@ -1,6 +1,6 @@
 {
   "name": "tarvos-express",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./src/index.js",
   "repository": "git@github.com:lucas-eduardo/tarvos-express.git",
   "author": "Lucas Eduardo <lucas.eduardo.developer@gmail.com>",
@@ -12,7 +12,9 @@
     }
   },
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "copy": "cpx './template/*' './bin/template'",
+    "copyVsCode": "cpx './template/.vscode/*' './bin/template/.vscode'"
   },
   "bin": {
     "tarvos-express": "./src/index.js"
@@ -38,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "commitizen": "^4.0.3",
+    "cpx": "^1.5.0",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
