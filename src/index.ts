@@ -11,6 +11,8 @@ import VerifyArgsController from './app/controllers/verifyArgs.controller';
 import CopyTemplateController from './app/controllers/copyTemplate.controller';
 import instructions from './app/constants/instructions.constant';
 
+import { version } from '../package.json';
+
 (async () => {
   const args: minimist.ParsedArgs = minimist(process.argv.slice(2));
 
@@ -68,7 +70,7 @@ import instructions from './app/constants/instructions.constant';
       process.exit();
     }
     if (args.version || args.v) {
-      log(chalk.hex('#F38E36').bold(`Version 1.0.3 \n`));
+      log(chalk.hex('#F38E36').bold(`Version ${version} \n`));
       log(chalk.hex('#F38E36').bold(`Created by Lucas Eduardo`));
     }
   } else {
