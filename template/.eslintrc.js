@@ -6,26 +6,26 @@ module.exports = {
   extends: [
     'airbnb-base',
     'prettier',
+    'plugin:jest/recommended',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
   plugins: [
-    '@typescript-eslint',
     'prettier',
+    'jest'
   ],
   rules: {
     'prettier/prettier': 'error',
-    "class-methods-use-this": "off",
-    "no-param-reassign": "off",
-    "camelcase": "off",
-    "import/no-unresolved": "off",
-    "no-unused-vars": "off"
+    'class-methods-use-this': 'off',
+    'no-param-reassign': 'off',
+    'camelcase': 'off',
+    'no-unused-vars': ['error', { 'argsIgnorePattern': 'next' }],
+    'func-names': ['error', 'never']
   },
 };

@@ -4,9 +4,10 @@
     ".editorconfig": true,
     ".eslintrc.js": true,
     "yarn.lock": true,
-    ".eslintignore": true,
-    "commitlint.config.js": true,
-    "tsconfig.json": true
+    "jest.config.js": true,
+    "babel.config.js": true,
+    "nodemon.json": true,
+    ".eslintignore": true
   },
   "breadcrumbs.enabled": true,
   "editor.fontFamily": "Fira Code, Consolas, monospace",
